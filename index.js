@@ -4,7 +4,7 @@ const express = require('express')
 var jalaali = require('jalaali-js')
 
 const app = express()
-const port = 5000
+const port = process.env.PORT || 3000
 //use pug as template engine
 app.set('view engine', 'pug')
 
