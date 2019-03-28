@@ -1,0 +1,41 @@
+/*fonts*/
+@font-face {
+    font-family: "IRANSans";
+    src: url("fonts/IRANSansMedium.woff") format('woff');
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url("fonts/IRANSansLight.woff") format('woff');
+    font-weight: light;
+}
+:lang(fa) 	{
+    font-family: IRANSans, "IRANSans", serif;
+    }
+
+/*header-main-footer*/
+/*body is a flex*/
+.body{
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*main should grow*/
+.body section.main{
+	flex: 1;
+}
+/*normal size, not smaller*/
+.body footer{
+	font-size: 1em;
+}
+/*navigation in footer, should be centered with no padding*/
+.body footer .navbar-nav{
+	margin: 0 auto;
+    padding: 0;
+}
+/*other than first child, should has margin right*/
+.body footer .navbar-nav > li{
+    margin-right: 4em;
+}
+.body footer .navbar-nav > li:first-child{
+    margin-right: 0em;
+}
